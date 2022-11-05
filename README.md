@@ -53,3 +53,9 @@ Give the following commands
 ```
 make
 ```
+## Auxillary cells
+Auxiliary cells, similar to standard cells in digital design, are one of the building blocks for the analog generators. They have simple analog functionality usually associated with the structure of the auxiliary cell. Since the structure and the functionality of the auxiliary cells do not change with technology node, they can be easily ported from one process design kit to another. Below is a list of auxiliary cells used for various analog block generations: <img width="1031" alt="Screenshot 2022-11-05 at 3 52 15 PM" src="https://user-images.githubusercontent.com/110840360/200115128-11575c1b-4fd7-422b-ba3b-dec646516a10.png">
+
+## Aux Cell Generation
+
+“AUXCELL_GEN” tool is developed to create a technology agnostic circuit design platform automating the process of Pareto optimization to meet the user constraints for each of the auxiliary cells and generate the required output views such as the CDL netlist, .lib files, GDS in STD cell format and LEF file. The output of this task will be a library of auxiliary cells used in the synthesis and APR of the analog blocks.
